@@ -116,7 +116,7 @@ const Footer = () => {
       </div>
       <div className="flex sm:flex-row flex-col justify-between sm:items-center mt-12">
         <p className="text-white font-[400] text-[0.875rem] leading-[1.25rem] tracking-[-0.02em] sm:pb-0 pb-7">
-          &#169; {new Date().getFullYear()} MySMEville. All right reserved
+          &#169; {new Date().getFullYear()} Hiraeth, All right reserved
         </p>
         <p className="text-white font-[400] text-[0.875rem] leading-[1.25rem] tracking-[-0.02em]">
           Terms & Conditions | Privacy Policy | Cookies Policy{" "}
