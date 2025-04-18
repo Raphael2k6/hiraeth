@@ -1,5 +1,4 @@
 import React from "react";
-import AutoPlay from "../carousels";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import CustomImage from "../customimage";
@@ -8,8 +7,6 @@ import dynamic from "next/dynamic";
 const Icon = dynamic(() => import("../icons/icons"), {
   ssr: false,
 });
-import { IoMdArrowRoundForward } from "react-icons/io";
-import Link from "next/link";
 
 const Testimonial = () => {
   return (

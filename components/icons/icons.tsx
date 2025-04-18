@@ -4,7 +4,7 @@ interface IconProps {
   name: string; // Name of the icon file (without extension)
   className?: string; // Optional Tailwind or custom CSS classes
   onClick?: () => void; // Optional click event handler
-  [key: string]: any; // Allow any additional props
+  [key: string]: unknown; // Allow any additional props with safer typing
 }
 
 /**
@@ -22,8 +22,7 @@ const Icon: FC<IconProps> = ({
 
   try {
     // Dynamically import the image
-    const Image = require(`./stock/${name}`)
-      .default as React.ComponentType<any>;
+    const Image = React.lazy(() => import(`./stock/${name}`));
 
     if (Image) {
       return (

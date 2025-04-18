@@ -5,7 +5,11 @@ import Meta from "./meta";
 import { ReactNode } from "react";
 
 interface MainLayoutProps {
-  meta: Record<string, any>;
+  meta: {
+    title: string;
+    description?: string;
+    [key: string]: unknown;
+  };
   children: ReactNode;
 }
 
