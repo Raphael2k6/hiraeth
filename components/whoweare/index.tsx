@@ -86,12 +86,12 @@ const WhoWeAre = () => {
           </h2>
         </div>
         <div className="w-full sm:w-7/12 h-full flex flex-col items-start gap-6">
-          <p className="font-aeonikpro text-[1.125rem] sm:text-[2rem] text-[#001928] leading-[28px] sm:leading-[2rem] font-[400] tracking-[-2%]">
+          <p className="font-aeonikpro text-[1.125rem] sm:text-[2rem] text-[#001928] leading-[28px] sm:leading-[2.5rem] font-[400] tracking-[-2%]">
             Hiraeth Consultancy is a boutique ESG advisory firm dedicated to
             bridging the gap between corporate responsibility and investor
             expectations.
           </p>
-          <p className="font-aeonikpro text-[1.125rem] sm:text-[2rem] text-[#8A959C] leading-[28px] sm:leading-[2rem] font-[400] tracking-[-2%]">
+          <p className="font-aeonikpro text-[1.125rem] sm:text-[2rem] text-[#8A959C] leading-[28px] sm:leading-[2.5rem] font-[400] tracking-[-2%]">
             Founded by a team of ex-investors, sustainability auditors, and
             corporate strategists, we help businesses across industries build
             ESG portfolios that attract funding, mitigate risks, and
