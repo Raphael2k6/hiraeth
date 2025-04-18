@@ -11,7 +11,7 @@ const WhoWeAre = () => {
   return (
     <>
       <section className="hidden sm:flex">
-        <div className="flex flex-wrap sm:flex-nowrap items-center justify-between text-center bg-[#F3F6F9] py-10 px-[6%] mx-auto">
+        <div className="flex flex-wrap sm:flex-nowrap items-center justify-between text-center bg-[#F3F6F9] py-10 px-[6%] w-full">
           <div>
             <span className="font-clash font-[800] sm:text-[2.25rem] text-black text-[2.5rem] tracking-[-2%]">
               50+
@@ -44,7 +44,7 @@ const WhoWeAre = () => {
           </div>
         </div>
       </section>
-      <section className="sm:hidden flex">
+      <section className="sm:hidden">
         <div className="flex flex-wrap sm:flex-nowrap items-center gap-10 justify-center text-center bg-[#F3F6F9] py-10 px-[6%] mx-auto">
           <div>
             <span className="font-clash font-[800] sm:text-[2.25rem] text-black text-[2.5rem] tracking-[-2%]">
