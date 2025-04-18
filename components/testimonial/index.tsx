@@ -12,13 +12,13 @@ const Testimonial = () => {
   return (
     <div className="bg-white py-12 px-[8%]">
       <div className="pb-8 pt-4">
-        <h6 className="text-black font-gilmer font-[600] text-[2.25rem] tracking-[-2%]">
+        <h6 className="text-black font-gilmer font-[600] text-[1.875rem] sm:text-[2.25rem] tracking-[-2%]">
           Client Testimonials & Success Stories
         </h6>
       </div>
       <div className="w-full">
-        <div className="flex justify-baseline gap-8 w-full">
-          <div className="w-5/12">
+        <div className="flex sm:flex-row flex-col justify-baseline gap-8 w-full">
+          <div className="w-full sm:w-5/12">
             <CustomImage
               width={464}
               height={3399}
@@ -27,12 +27,12 @@ const Testimonial = () => {
               alt=""
             />{" "}
           </div>
-          <div className="w-5/12 flex justify-baseline items-baseline-last">
+          <div className="w-full sm:w-5/12 flex justify-baseline items-baseline-last">
             <div className=" flex flex-col justify-baseline gap-4">
               <div>
                 <Icon name="quote" />
               </div>
-              <span className="text-black font-[600] font-gilmer text-[1.75rem]">
+              <span className="text-black font-[600] font-gilmer text-[1.5rem] smtext-[1.75rem]">
                 Tech Startup Client{" "}
               </span>
               <p className="text-[#001928] font-[400] font-gilmer text-[1.25rem] leading-[2rem] tracking-[-0.02em]">
@@ -42,12 +42,12 @@ const Testimonial = () => {
                 Result? We closed a $5M round led by a top impact fund.
               </p>
               <div className="flex gap-2 items-center">
-                <span>Anita Odunsi</span>
+                <span className="font-[600]">Anita Odunsi</span>
                 <p>CEO, NexGen AI Solutions</p>
               </div>
             </div>
           </div>
-          <div className="w-2/12 flex justify-baseline items-baseline-last">
+          <div className="hidden sm:flex w-2/12  justify-baseline items-baseline-last">
             <CustomImage
               width={143}
               height={213}

@@ -5,8 +5,8 @@ import { FaLinkedin, FaTwitter, FaFacebook, FaYoutube } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="bg-[#004422] py-12 px-[8%]">
-      <div className="flex justify-between items-center">
-        <div className="flex flex-col gap-4 w-4/12">
+      <div className="flex sm:flex-row flex-col gap-5 justify-between items-center">
+        <div className="flex flex-col gap-4 w-full sm:w-4/12">
           <CustomImage
             width={135}
             height={28}
@@ -20,7 +20,7 @@ const Footer = () => {
           </p>
         </div>
         <div />
-        <div className="flex flex-col gap-3 w-4/12">
+        <div className="flex flex-col gap-3 sm:w-4/12 w-full">
           <p className="font-[600] text-white text-[0.875rem] leading-[1.25rem] tracking-[-0.02em]">
             Subscribe to our Newsletter
           </p>
@@ -29,13 +29,13 @@ const Footer = () => {
               placeholder="Enter Your Email "
               className="bg-white w-[60%] h-10 indent-3 outline-0 ring-0"
             />
-            <button className="bg-[#004422] px-4 py-2 text-white rounded-lg cursor-pointer">
+            <button className="bg-[#004422] whitespace-nowrap px-4 py-2 text-white rounded-lg cursor-pointer">
               subscribe Now
             </button>
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-4 gap-4 mt-12">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-12">
         <div>
           <span className="text-[1rem] font-[700] font-gilmer text-white">
             Quick Links
@@ -81,7 +81,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div>
+        <div className="hidden sm:flex">
           <ul className="flex gap-6">
             <li>
               <FaTwitter className="text-white text-[26.5px]" />
@@ -98,8 +98,24 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="flex justify-between items-center mt-12">
-        <p className="text-white font-[400] text-[0.875rem] leading-[1.25rem] tracking-[-0.02em]">
+      <div className="sm:hidden mt-7">
+        <ul className="flex gap-6">
+          <li>
+            <FaTwitter className="text-white text-[26.5px]" />
+          </li>
+          <li>
+            <FaFacebook className="text-white text-[26.5px]" />
+          </li>
+          <li>
+            <FaLinkedin className="text-white text-[26.5px]" />
+          </li>
+          <li>
+            <FaYoutube className="text-white text-[26.5px]" />
+          </li>
+        </ul>
+      </div>
+      <div className="flex sm:flex-row flex-col justify-between sm:items-center mt-12">
+        <p className="text-white font-[400] text-[0.875rem] leading-[1.25rem] tracking-[-0.02em] sm:pb-0 pb-7">
           &#169; {new Date().getFullYear()} MySMEville. All right reserved
         </p>
         <p className="text-white font-[400] text-[0.875rem] leading-[1.25rem] tracking-[-0.02em]">

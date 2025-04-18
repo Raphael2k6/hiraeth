@@ -4,16 +4,16 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <section className="pt-4 h-screen bg-[#D5F6E5]">
+    <section className="pt-4 h-full sm:h-screen bg-[#D5F6E5]">
       <NavBar />
       <div className="max-w-[85%] mx-auto">
-        <div className="flex py-[4rem] h-full w-full px-4 gap-10 items-center">
-          <div className="flex flex-col gap-6 items-start w-6/12 h-full">
-            <h1 className="text-[3.75rem] text-primary font-[600] font-clashlight leading-[4rem] tracking-[-2%]">
+        <div className="flex flex-col sm:flex-row py-[4rem] h-full w-full sm:px-4 gap-10 items-center">
+          <div className="flex flex-col gap-6 items-start w-full sm:w-6/12 h-full">
+            <h1 className="text-[2.25rem] xl:text-[3.75rem] text-primary font-[600] font-clashlight leading-[2.75rem] xl:leading-[4rem] tracking-[-2%]">
               Embedding ESG Excellence into <br />
               Your Strategy.
             </h1>
-            <p className="text-[1.25rem] text-primary font-gilmer font-[500] leading-[2rem] tracking-[-0.02em]">
+            <p className="text-[1.125rem] sm:text-[1.25rem] text-primary font-gilmer font-[500] leading-[1.75rem] sm:leading-[2rem] tracking-[-0.02em]">
               We craft portfolios that align ENVIRONMENTAL impact, SOCIAL
               equity, and GOVERNANCE precision to secure funding from ESG-Driven
               Investors.
@@ -25,7 +25,7 @@ const HeroSection = () => {
               Schedule a Consultation
             </Link>
           </div>
-          <div className="w-6/12 h-full flex items-center justify-center">
+          <div className="w-full sm:w-6/12 h-full flex items-center justify-center">
             <CustomImage
               src="/hero.png"
               width={549}

@@ -4,9 +4,9 @@
 @config "../tailwind.config.ts";
 
 .bold-text {
-  @apply font-clash font-[800] text-black text-[2.5rem] tracking-[-2%];
+  @apply font-clash font-[800] sm:text-[2.25rem] text-black text-[2.5rem] tracking-[-2%];
 }
 
 .light-text {
-  @apply font-aeonik font-[400] text-[#54656F] text-[1.25rem] tracking-[0%];
+  @apply font-aeonik font-[400] text-[#54656F] text-[1.125rem] tracking-[0%];
 }
