@@ -1,11 +1,48 @@
+// import { useEffect, useState } from "react";
+// import MobileNav from "../navmobile";
 import CustomImage from "../customimage";
-import NavBar from "../navbar";
+// import NavBar from "../navbar";
 import Link from "next/link";
 
 const HeroSection = () => {
+  // const [isFixed, setIsFixed] = useState(false);
+  // const [isModalOpen, setShowModal] = useState(false);
+
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (window.scrollY > 100) {
+  //       // Adjust the scroll threshold as needed
+  //       setIsFixed(true);
+  //     } else {
+  //       setIsFixed(false);
+  //     }
+  //   };
+  //   window.addEventListener("scroll", handleScroll);
+
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
+
+  // const handleHamburgerClick = () => {
+  //   setShowModal(!isModalOpen);
+  // };
   return (
     <section className="pt-4 h-full sm:h-screen bg-[#D5F6E5]">
-      <NavBar />
+      {/* {isModalOpen && (
+        <MobileNav
+          closeModal={handleHamburgerClick}
+          // isModalOpen={isModalOpen}
+        />
+      )}
+
+      {!isModalOpen && (
+        <NavBar
+          isFixed={isFixed}
+          isModalOpen={isModalOpen}
+          handleHamburgerClick={handleHamburgerClick}
+        />
+      )} */}
       <div className="max-w-[85%] mx-auto">
         <div className="flex flex-col sm:flex-row py-[4rem] h-full w-full sm:px-4 gap-10 items-center">
           <div className="flex flex-col gap-6 items-start w-full sm:w-6/12 h-full">

@@ -112,7 +112,7 @@ const WhoWeAre = () => {
             <CustomImage src="/people.png" alt="" width={444} height={352} />
           </div>
           <div className="w-full sm:w-[60%] h-full flex sm:flex-row flex-col gap-8 sm:gap-6">
-            <div className=" flex-col gap-3 pt-7  sm:pt-3">
+            <div className="flex flex-col gap-3 pt-7 sm:pt-3">
               <Icon name="target" />
               <h6 className="text-[1.75rem] leading-[34px] font-aeonik font-[500] text-[#001928] tracking-[0%]">
                 Investor-Centric <br />
