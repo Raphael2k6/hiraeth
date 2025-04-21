@@ -87,7 +87,7 @@ const ServicesComponent = () => {
             </div>
           </div>
         </div>
-        <div className=" h-full sm:py-16 py-5 bg-[#D1E3FF]">
+        <div className=" h-full sm:py-16 py-5 bg-[#D1E3FF]" id="packages">
           <div className="max-w-[84%] mx-auto">
             <div className="flex justify-center items-center pt-6 pb-10 ">
               <h6 className="text-primary font-gilmer font-[600] text-[2.25rem] tracking-[-2%]">

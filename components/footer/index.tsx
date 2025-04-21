@@ -1,8 +1,12 @@
 import React from "react";
 import CustomImage from "../customimage";
 import { FaLinkedin, FaTwitter, FaFacebook, FaYoutube } from "react-icons/fa";
+import { useModal } from "../modalcontext";
+import Link from "next/link";
 
 const Footer = () => {
+  const { handleOpenScheduleModal } = useModal();
+
   return (
     <div className="bg-[#004422] py-12 px-[8%]">
       <div className="flex sm:flex-row flex-col gap-5 justify-between items-center">
@@ -42,13 +46,13 @@ const Footer = () => {
           </span>
           <ul className="flex flex-col gap-2 mt-4">
             <li className="text-white font-[400] text-[0.875rem] leading-[1.25rem] tracking-[-0.02em]">
-              About Us
+              <Link href="/about-us">About Us</Link>
             </li>
             <li className="text-white font-[400] text-[0.875rem] leading-[1.25rem] tracking-[-0.02em]">
-              Contact Us
+              <Link href="/contact-us">Contact Us</Link>
             </li>
             <li className="text-white font-[400] text-[0.875rem] leading-[1.25rem] tracking-[-0.02em]">
-              Services
+              <Link href="/services">Services</Link>
             </li>
           </ul>
         </div>
@@ -58,10 +62,16 @@ const Footer = () => {
           </span>
           <ul className="flex flex-col gap-2 mt-4">
             <li className="text-white font-[600] text-[0.875rem] leading-[1.25rem] tracking-[-0.02em]">
-              Schedule a Consultation
+              <button
+                type="button"
+                onClick={handleOpenScheduleModal}
+                className="cursor-pointer"
+              >
+                Schedule a Consultation
+              </button>{" "}
             </li>
             <li className="text-white font-[400] text-[0.875rem] leading-[1.25rem] tracking-[-0.02em]">
-              Packages
+              <Link href="/services#packages">Packages</Link>
             </li>
           </ul>
         </div>

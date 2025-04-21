@@ -4,6 +4,7 @@ import { composeClasses } from "@/utils";
 import localFont from "next/font/local";
 import "react-phone-input-2/lib/style.css";
 import { ModalProvider } from "@/components/modalcontext";
+import "@/styles/custom.css";
 
 const clashDisplay = localFont({
   src: [
