@@ -5,7 +5,7 @@ import IndustriesServed from "@/components/industriesserved";
 import CoreValues from "@/components/corevalues";
 import Testimonial from "@/components/testimonial";
 const meta = {
-  title: "Hiraeth",
+  title: "Hiraeth Consulting",
   description:
     "Hiraeth empowers businesses to unlock investment opportunities and drive long-term success through tailored, impactful ESG strategies.",
   rel: "canonical",

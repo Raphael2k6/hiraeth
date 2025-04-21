@@ -1,7 +1,7 @@
 import Head from "next/head";
 
 export default function Meta({
-  title = "MySMEville",
+  title = "Hiraeth",
   description = "...",
   rel = "",
   href = "",

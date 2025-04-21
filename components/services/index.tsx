@@ -14,7 +14,7 @@ const ServicesComponent = () => {
   return (
     <MainLayout
       meta={{
-        title: "About Us",
+        title: "Hiraeth Consulting | Services",
         description:
           "At Hiraeth, our approach is designed to be thorough, collaborative, and tailored to your unique business needs. We guide companies through every step of the ESG integration process, ensuring you not only meet investor expectations but also position yourself as a leader in sustainability and responsible governance.",
         rel: "canonical",

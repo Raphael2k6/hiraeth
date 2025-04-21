@@ -7,7 +7,7 @@ const ContactUsComponent = () => {
   return (
     <MainLayout
       meta={{
-        title: "Contact Us",
+        title: "Hiraeth Consulting | Contact Us",
         description:
           "Whether you’re prepping for an IPO or need to calm restless shareholders, we respond within 4 hours. ",
         rel: "canonical",

@@ -7,7 +7,7 @@ const AboutUsComponent = () => {
   return (
     <MainLayout
       meta={{
-        title: "About Us",
+        title: "Hiraeth Consulting | About Us",
         description: "Learn more about our mission and values",
         rel: "canonical",
         href: "/about-us",
