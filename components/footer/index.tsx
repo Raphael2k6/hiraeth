@@ -14,7 +14,7 @@ const Footer = () => {
             src={"/logodark.png"}
             alt=""
           />
-          <p className="text-white font-[400] font-gilmer text-[1.25rem] leading-[2rem] tracking-[0%]">
+          <p className="text-white font-[400] font-gilmer text-[1.125rem] xl:text-[1.25rem] leading-[2rem] tracking-[0%]">
             Build ESG portfolios that attract investors, drive sustainable
             growth, and future-proof your business.
           </p>

@@ -6,7 +6,7 @@ const Founder = () => {
       <h4 className="font-[600] mb-8 font-gilmer text-[2.25rem] text-shadow-primary text-start">
         Meet Our Founder
       </h4>
-      <div className="sm:grid sm:grid-cols-3 gap-5">
+      <div className="lg:grid sm:grid-cols-3 gap-5">
         <div className="sm:col-span-1 w-full">
           <CustomImage src="/theceo.png" width={464} height={399} alt="" />
         </div>

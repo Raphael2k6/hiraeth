@@ -3,9 +3,13 @@ import Link from "next/link";
 
 interface MobileNavProps {
   closeModal: () => void;
+  handleOpenScheduleModal: () => void;
 }
 
-const MobileNav: React.FC<MobileNavProps> = ({ closeModal }) => {
+const MobileNav: React.FC<MobileNavProps> = ({
+  closeModal,
+  handleOpenScheduleModal,
+}) => {
   return (
     <div
       className="fixed inset-0 z-50 flex animate-[slide-down-fade_1s_ease-in-out] items-start justify-end bg-black bg-opacity-50 transition-transform duration-1000 ease-in-out sm:hidden"
@@ -45,12 +49,12 @@ const MobileNav: React.FC<MobileNavProps> = ({ closeModal }) => {
           >
             Contact Us
           </Link>
-          <Link
-            href="/schedule-consultation"
+          <button
+            onClick={handleOpenScheduleModal}
             className="bg-[#002211] font-gilmer  text-[1rem] font-[400] rounded-md px-4 py-2 text-white"
           >
             Schedule a Consultation
-          </Link>
+          </button>
         </div>
       </div>
     </div>

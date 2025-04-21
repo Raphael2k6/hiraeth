@@ -81,17 +81,17 @@ const WhoWeAre = () => {
       </section>
       <section className="flex flex-col gap-3 sm:flex-row justify-between items-start px-[8%] py-5 sm:py-15 mx-auto">
         <div className="w-full sm:w-5/12 h-full flex items-start font-gilmer font-[600] text-black">
-          <h2 className="text-[1.875rem] font-gilmer font-[600] sm:text-[2.25rem]">
+          <h2 className="text-[1.875rem] md:text-[1.8rem] font-gilmer font-[600] lg:text-[2.25rem]">
             Who We Are
           </h2>
         </div>
         <div className="w-full sm:w-7/12 h-full flex flex-col items-start gap-6">
-          <p className="font-aeonikpro text-[1.125rem] sm:text-[2rem] text-[#001928] leading-[28px] sm:leading-[2.5rem] font-[400] tracking-[-2%]">
+          <p className="font-aeonikpro text-[1.125rem] md:text-[1.5rem] xl:text-[2rem] text-[#001928] leading-[28px] sm:leading-[2.5rem] font-[400] tracking-[-2%]">
             Hiraeth Consultancy is a boutique ESG advisory firm dedicated to
             bridging the gap between corporate responsibility and investor
             expectations.
           </p>
-          <p className="font-aeonikpro text-[1.125rem] sm:text-[2rem] text-[#8A959C] leading-[28px] sm:leading-[2.5rem] font-[400] tracking-[-2%]">
+          <p className="font-aeonikpro text-[1.125rem] md:text-[1.5rem] xl:text-[2rem] text-[#8A959C] leading-[28px] sm:leading-[2.5rem] font-[400] tracking-[-2%]">
             Founded by a team of ex-investors, sustainability auditors, and
             corporate strategists, we help businesses across industries build
             ESG portfolios that attract funding, mitigate risks, and
@@ -107,11 +107,11 @@ const WhoWeAre = () => {
         </div>
       </section>
       <section className=" px-[8%] py-5 sm:py-15 mx-auto">
-        <div className="flex sm:flex-row flex-col gap-8 w-full justify-baseline">
-          <div className="w-full sm:w-[40%] h-full flex items-start font-gilmer font-[600] text-black">
+        <div className="flex lg:flex-row flex-col gap-8 w-full justify-baseline">
+          <div className="w-full lg:w-[40%] h-full flex items-start font-gilmer font-[600] text-black">
             <CustomImage src="/people.png" alt="" width={444} height={352} />
           </div>
-          <div className="w-full sm:w-[60%] h-full flex sm:flex-row flex-col gap-8 sm:gap-6">
+          <div className="w-full lg:w-[60%] h-full flex sm:flex-row flex-col gap-8 sm:gap-6">
             <div className="flex flex-col gap-3 pt-7 sm:pt-3">
               <Icon name="target" />
               <h6 className="text-[1.75rem] leading-[34px] font-aeonik font-[500] text-[#001928] tracking-[0%]">

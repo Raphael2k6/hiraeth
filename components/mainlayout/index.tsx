@@ -1,11 +1,11 @@
 import Footer from "../footer";
 import { useEffect, useState } from "react";
 import Meta from "./meta";
-// import NavBar from "../navbar";
 import NavBar from "../navbar";
 import MobileNav from "../navmobile";
-
 import { ReactNode } from "react";
+import Modal from "../modal";
+import { useModal } from "../modalcontext";
 
 interface MainLayoutProps {
   meta: {
@@ -39,6 +39,12 @@ const MainLayout = ({ meta, children }: MainLayoutProps) => {
   const handleHamburgerClick = () => {
     setShowModal(!isModalOpen);
   };
+
+  const {
+    handleOpenScheduleModal,
+    handleCloseScheduleModal,
+    openScheduleModal,
+  } = useModal();
   return (
     <>
       <Meta {...meta} />
@@ -47,6 +53,7 @@ const MainLayout = ({ meta, children }: MainLayoutProps) => {
           <MobileNav
             closeModal={handleHamburgerClick}
             // isModalOpen={isModalOpen}
+            handleOpenScheduleModal={handleOpenScheduleModal}
           />
         )}
 
@@ -55,11 +62,15 @@ const MainLayout = ({ meta, children }: MainLayoutProps) => {
             isFixed={isFixed}
             isModalOpen={isModalOpen}
             handleHamburgerClick={handleHamburgerClick}
+            handleOpenScheduleModal={handleOpenScheduleModal}
           />
         )}
         <main className="flex-grow">{children}</main>
         <Footer />
       </div>
+      {openScheduleModal && (
+        <Modal handleCloseScheduleModal={handleCloseScheduleModal} />
+      )}
     </>
   );
 };

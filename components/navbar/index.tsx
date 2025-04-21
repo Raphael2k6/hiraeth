@@ -8,6 +8,7 @@ interface NavBarProps {
   isFixed: boolean;
   isModalOpen: boolean;
   handleHamburgerClick: () => void;
+  handleOpenScheduleModal: () => void;
 }
 
 const routesData = [
@@ -20,6 +21,7 @@ const NavBar: React.FC<NavBarProps> = ({
   isFixed,
   isModalOpen,
   handleHamburgerClick,
+  handleOpenScheduleModal,
 }) => {
   const pathname = usePathname();
 
@@ -53,13 +55,14 @@ const NavBar: React.FC<NavBarProps> = ({
           <Link href="/" className="">
             <CustomImage src="/logo.png" alt="logo" width={136} height={28} />
           </Link>
-          <div className="space-x-10 font-gilmer">{route}</div>
-          <Link
-            href="/schedule-consultation"
-            className="bg-[#002211] text-[1rem] font-[400] rounded-md px-4 py-2 text-white"
+          <div className="space-x-5 lg:space-x-10 font-gilmer">{route}</div>
+          <button
+            type="button"
+            onClick={handleOpenScheduleModal}
+            className="cursor-pointer bg-[#002211] text-[1rem] font-[400] rounded-md px-4 py-2 text-white"
           >
             Schedule a Consultation
-          </Link>
+          </button>
         </div>
       </nav>
       <nav

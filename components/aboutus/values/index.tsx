@@ -1,13 +1,14 @@
 import React from "react";
-import Link from "next/link";
 import CustomImage from "@/components/customimage";
 import dynamic from "next/dynamic";
+import { useModal } from "@/components/modalcontext";
 const Icon = dynamic(() => import("@/components/icons/icons"));
 
 const Values = () => {
+  const { handleOpenScheduleModal } = useModal();
   return (
     <div className="w-full sm:max-w-[85%] mx-auto sm:px-4 sm:py-20">
-      <div className="grid sm:grid-cols-2 sm:gap-10 gap-6 ">
+      <div className="grid sm:grid-cols-2 items-center sm:gap-10 gap-6 ">
         <div className="flex flex-col gap-6 sm:justify-center">
           <h4 className="font-[600] font-gilmer text-[1.875rem] sm:text-[2.25rem] text-shadow-primary">
             Our Mission
@@ -21,18 +22,19 @@ const Values = () => {
             with international investors who prioritize ethics, resilience, and
             innovation.
           </p>
-          <Link
-            href="/schedule-consultation"
-            className="bg-[#002211] w-fit font-gilmer  text-[1rem] font-[400] rounded-md px-4 py-3 text-white"
+          <button
+            type="button"
+            onClick={handleOpenScheduleModal}
+            className="cursor-pointer bg-[#002211] w-fit font-gilmer  text-[1rem] font-[400] rounded-md px-4 py-3 text-white"
           >
             Schedule a Consultation
-          </Link>
+          </button>
         </div>
-        <div className="sm:ml-[7%]">
+        <div className="lg:ml-[7%]">
           <CustomImage width={549} height={444} alt="" src="/mission.png" />
         </div>
       </div>
-      <div className="grid sm:grid-cols-2 sm:gap-10 gap-6 mt-16 sm:mt-26">
+      <div className="grid sm:grid-cols-2 lg:gap-10 gap-6 mt-16 sm:mt-26">
         <div className="hidden sm:flex">
           <CustomImage width={549} height={444} alt="" src="/vision.png" />
         </div>
@@ -46,12 +48,13 @@ const Values = () => {
             making ESG a cornerstone of growth, innovation, and investor
             confidence.
           </p>
-          <Link
-            href="/schedule-consultation"
-            className="bg-[#002211] w-fit font-gilmer  text-[1rem] font-[400] rounded-md px-4 py-3 text-white"
+          <button
+            type="button"
+            onClick={handleOpenScheduleModal}
+            className="cursor-pointer bg-[#002211] w-fit font-gilmer  text-[1rem] font-[400] rounded-md px-4 py-3 text-white"
           >
             Schedule a Consultation
-          </Link>
+          </button>
         </div>
         <div className="sm:hidden">
           <CustomImage width={549} height={444} alt="" src="/vision.png" />
@@ -61,7 +64,7 @@ const Values = () => {
         <h4 className="font-[600] font-gilmer text-[1.875rem] sm:text-[2.25rem] text-shadow-primary sm:text-center">
           Our Business Objectives
         </h4>
-        <div className=" grid sm:grid-cols-3 gap-10 mt-14">
+        <div className="grid lg:grid-cols-3 gap-10 mt-14">
           <div className="flex flex-col gap-6">
             <Icon name="trophy" />
             <h6 className="text-[1.5rem] leading=[150%] text-primary font-[600] sm:text-[1.75rem] font-gilmer">

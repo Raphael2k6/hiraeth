@@ -26,7 +26,7 @@ const ContactUsComponent = () => {
             shareholders, we respond within 4 hours. 
           </p>
         </div>
-        <div className="sm:grid sm:grid-cols-2 sm:gap-20 max-w-[10/12] mx-auto my-10">
+        <div className="sm:grid lg:grid-cols-2 gap-10 xl:gap-20 max-w-[10/12] px-6 mx-auto my-10">
           <div className="px-6 flex flex-col gap-8 bg-[#F5FFFA] sm:px-20 py-10">
             <div className="border-b border-b-[#8ADB92] border-dashed pb-4 flex flex-col gap-3">
               <Icon name="address" />

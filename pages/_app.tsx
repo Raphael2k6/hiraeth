@@ -2,6 +2,8 @@ import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import { composeClasses } from "@/utils";
 import localFont from "next/font/local";
+import "react-phone-input-2/lib/style.css";
+import { ModalProvider } from "@/components/modalcontext";
 
 const clashDisplay = localFont({
   src: [
@@ -61,7 +63,9 @@ const fontVars = composeClasses(
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <div className={fontVars}>
-      <Component {...pageProps} />
+      <ModalProvider>
+        <Component {...pageProps} />
+      </ModalProvider>
     </div>
   );
 }

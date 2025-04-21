@@ -2,13 +2,15 @@ import React from "react";
 import MainLayout from "../mainlayout";
 import CustomImage from "../customimage";
 import dynamic from "next/dynamic";
-import Link from "next/link";
+import { useModal } from "../modalcontext";
 
 const Icon = dynamic(() => import("../../components/icons/icons"), {
   ssr: false,
 });
 
 const ServicesComponent = () => {
+  const { handleOpenScheduleModal } = useModal();
+
   return (
     <MainLayout
       meta={{
@@ -21,7 +23,7 @@ const ServicesComponent = () => {
     >
       <div className="flex flex-col gap-5 min-h-screen items-center justify-center w-full">
         <div className="px-8 sm:px-0 flex gap-5 items-center sm:justify-center w-full sm:max-w-[75%] mt-20 sm:mt-10">
-          <h1 className="font-clashlight font-[700] sm:text-[3.75rem] text-[2.25rem] text-primary leading-[2.75rem] sm:leading-[4.5rem] tracking-[-2%] sm:text-center">
+          <h1 className="font-clashlight font-[700] sm:text-[3rem] lg:text-[3.75rem] text-[2.25rem] text-primary leading-[2.75rem] sm:leading-[3.5rem] lg:leading-[4.5rem] tracking-[-2%] sm:text-center">
             Pioneering ESG Excellence to Unlock Growth and Investor Confidence{" "}
           </h1>
         </div>
@@ -34,7 +36,7 @@ const ServicesComponent = () => {
             leader in sustainability and responsible governance.
           </p>
         </div>
-        <div className="px-8">
+        <div className="px-6">
           <CustomImage
             src="/services.png"
             width={874}
@@ -49,36 +51,36 @@ const ServicesComponent = () => {
               How We Work
             </h6>
           </div>
-          <div className="flex sm:flex-row flex-col gap-6 items-start w-full">
-            <div className="bg-[#C6DFFE] p-7 rounded-2xl flex flex-col gap-6 sm:w-4/12 w-full h-[25rem]">
+          <div className="flex sm:flex-row flex-wrap lg:flex-nowrap flex-col gap-4 lg:gap-6 items-start w-full">
+            <div className="bg-[#C6DFFE] p-7 rounded-2xl flex flex-col gap-4 sm:w-[48%] lg:w-4/12 w-full h-[25rem]">
               <div>
                 <Icon name="one" />
               </div>
-              <span className="text-black font-[600] font-gilmer text-[1.5rem] sm:text-[1.75rem]">
+              <span className="text-black font-[600] font-gilmer text-[1.5rem] sm:text-[1.5rem] xl:text-[1.75rem]">
                 Initial Consultation & Assessment{" "}
               </span>
-              <p className="text-[#001928] font-[400] font-gilmer text-[1rem] sm:text-[1.25rem] leading-[2rem] tracking-[-0.02em]">
+              <p className="text-[#001928] font-[400] font-gilmer text-[1rem] xl:text-[1.25rem] leading-[2rem] tracking-[-0.02em]">
                 Understand first, act second. We diagnose your ESG gaps and
                 goals to build strategies rooted in reality.
               </p>
             </div>
-            <div className="bg-[#D5F6E5] p-7 rounded-2xl flex flex-col gap-6 w-full sm:w-4/12 h-[25rem]">
+            <div className="bg-[#D5F6E5] p-7 rounded-2xl flex flex-col gap-4 w-full sm:w-[48%] lg:w-4/12 h-[25rem]">
               <Icon name="two" />
-              <span className="text-black font-[600] font-gilmer text-[1.5rem] sm:text-[1.75rem]">
+              <span className="text-black font-[600] font-gilmer text-[1.5rem] sm:text-[1.5rem] xl:text-[1.75rem]">
                 Customized ESG Strategy Development{" "}
               </span>
-              <p className="text-[#001928] font-[400] font-gilmer text-[1rem] sm:text-[1.25rem] leading-[2rem] tracking-[-0.02em]">
+              <p className="text-[#001928] font-[400] font-gilmer text-[1rem] xl:text-[1.25rem] leading-[2rem] tracking-[-0.02em]">
                 Your business is unique—your ESG plan should be too. No
                 templates. Only investor-aligned blueprints for your industry
                 and growth stage.
               </p>
             </div>
-            <div className="bg-[#E2E5E8] p-7 rounded-2xl flex flex-col gap-6 w-full sm:w-4/12 h-[25rem]">
+            <div className="bg-[#E2E5E8] p-7 rounded-2xl flex flex-col gap-4 w-full sm:w-[48%] lg:w-4/12 h-[25rem]">
               <Icon name="three" />
-              <span className="text-black font-[600] font-gilmer text-[1.5rem] sm:text-[1.75rem]">
+              <span className="text-black font-[600] font-gilmer text-[1.5rem] xl:text-[1.75rem]">
                 Implementation & Portfolio Creation{" "}
               </span>
-              <p className="text-[#001928] font-[400] font-gilmer text-[1rem] sm:text-[1.25rem] leading-[2rem] tracking-[-0.02em]">
+              <p className="text-[#001928] font-[400] font-gilmer text-[1rem] xl:text-[1.25rem] leading-[2rem] tracking-[-0.02em]">
                 From plan to proof. We turn strategies into policies and
                 portfolios that investors trust.
               </p>
@@ -335,7 +337,7 @@ const ServicesComponent = () => {
             <CustomImage width={549} height={444} alt="" src="/staff.png" />
           </div>
           <div className="flex flex-col gap-6 sm:justify-center">
-            <h4 className="font-[600] font-gilmer text-[1.875rem] leading-[2.75rem] sm:text-[2.25rem] text-shadow-primary w-11/12">
+            <h4 className="font-[600] font-gilmer text-[1.875rem] sm:leading-[2.5rem] lg:leading-[2.75rem] lg:text-[2.25rem] text-shadow-primary w-11/12">
               Ready to Transform ESG Compliance into Investor Appeal?
             </h4>
             <p className="font-gilmer text-[1.125rem] sm:text-[1.25rem] text-[#001928] leading-[28px] sm:leading-[1.875rem] font-[400] tracking-[-2%] text-start">
@@ -343,12 +345,13 @@ const ServicesComponent = () => {
               mitigate risks, and lead your industry. First consultation is
               free.
             </p>
-            <Link
-              href="/schedule-consultation"
-              className="bg-[#002211] w-fit font-gilmer  text-[1rem] font-[400] rounded-md px-4 py-3 text-white"
+            <button
+              type="button"
+              onClick={handleOpenScheduleModal}
+              className="cursor-pointer bg-[#002211] w-fit font-gilmer  text-[1rem] font-[400] rounded-md px-4 py-3 text-white"
             >
               Schedule a Consultation
-            </Link>
+            </button>
           </div>
         </div>
       </div>
