@@ -3,6 +3,7 @@ import CustomImage from "@/components/customimage";
 import dynamic from "next/dynamic";
 import { useModal } from "@/components/modalcontext";
 const Icon = dynamic(() => import("@/components/icons/icons"));
+import { AnimatedElement } from "@/components/animation";
 
 const Values = () => {
   const { handleOpenScheduleModal } = useModal();
@@ -30,14 +31,18 @@ const Values = () => {
             Schedule a Consultation
           </button>
         </div>
-        <div className="lg:ml-[7%]">
-          <CustomImage width={549} height={444} alt="" src="/mission.png" />
-        </div>
+        <AnimatedElement>
+          <div className="lg:ml-[7%]">
+            <CustomImage width={549} height={444} alt="" src="/mission.png" />
+          </div>
+        </AnimatedElement>
       </div>
       <div className="grid sm:grid-cols-2 lg:gap-10 gap-6 mt-16 sm:mt-26">
-        <div className="hidden sm:flex">
-          <CustomImage width={549} height={444} alt="" src="/vision.png" />
-        </div>
+        <AnimatedElement>
+          <div className="hidden sm:flex">
+            <CustomImage width={549} height={444} alt="" src="/vision.png" />
+          </div>
+        </AnimatedElement>
         <div className="flex flex-col gap-6 justify-center">
           <h4 className="font-[600] font-gilmer text-[1.875rem] sm:text-[2.25rem] text-shadow-primary">
             Our Vision
@@ -64,39 +69,41 @@ const Values = () => {
         <h4 className="font-[600] font-gilmer text-[1.875rem] sm:text-[2.25rem] text-shadow-primary sm:text-center">
           Our Business Objectives
         </h4>
-        <div className="grid lg:grid-cols-3 gap-10 mt-14">
-          <div className="flex flex-col gap-6">
-            <Icon name="trophy" />
-            <h6 className="text-[1.5rem] leading=[150%] text-primary font-[600] sm:text-[1.75rem] font-gilmer">
-              Become the Leading ESG Consultancy for Growth-Oriented Firms
-            </h6>
-            <p className="text-[1rem] font-[400] font-aeonik leading-[1.5rem] text-primary">
-              By delivering strategies that balance compliance with innovation,
-              we aim to be the first choice for companies seeking to align
-              profit with purpose.
-            </p>
+        <AnimatedElement>
+          <div className="grid lg:grid-cols-3 gap-10 mt-14">
+            <div className="flex flex-col gap-6">
+              <Icon name="trophy" />
+              <h6 className="text-[1.5rem] leading=[150%] text-primary font-[600] sm:text-[1.75rem] font-gilmer">
+                Become the Leading ESG Consultancy for Growth-Oriented Firms
+              </h6>
+              <p className="text-[1rem] font-[400] font-aeonik leading-[1.5rem] text-primary">
+                By delivering strategies that balance compliance with
+                innovation, we aim to be the first choice for companies seeking
+                to align profit with purpose.
+              </p>
+            </div>
+            <div className="flex flex-col gap-6">
+              <Icon name="bolt" />
+              <h6 className="text-[1.5rem] leading=[150%] text-primary font-[600] sm:text-[1.75rem] font-gilmer">
+                Democratize ESG Excellence{" "}
+              </h6>
+              <p className="text-[1rem] font-[400] font-aeonik leading-[1.5rem] text-primary">
+                From SMEs to multinationals, we empower businesses at all stages
+                to build credible, investor-friendly ESG portfolios.
+              </p>
+            </div>{" "}
+            <div className="flex flex-col gap-6">
+              <Icon name="circle" />
+              <h6 className="text-[1.5rem] leading=[150%] text-primary font-[600] sm:text-[1.75rem] font-gilmer">
+                Drive Systemic Change{" "}
+              </h6>
+              <p className="text-[1rem] font-[400] font-aeonik leading-[1.5rem] text-primary">
+                Through advocacy and education, we promote ESG adoption as a
+                non-negotiable for sustainable growth across industries.
+              </p>
+            </div>{" "}
           </div>
-          <div className="flex flex-col gap-6">
-            <Icon name="bolt" />
-            <h6 className="text-[1.5rem] leading=[150%] text-primary font-[600] sm:text-[1.75rem] font-gilmer">
-              Democratize ESG Excellence{" "}
-            </h6>
-            <p className="text-[1rem] font-[400] font-aeonik leading-[1.5rem] text-primary">
-              From SMEs to multinationals, we empower businesses at all stages
-              to build credible, investor-friendly ESG portfolios.
-            </p>
-          </div>{" "}
-          <div className="flex flex-col gap-6">
-            <Icon name="circle" />
-            <h6 className="text-[1.5rem] leading=[150%] text-primary font-[600] sm:text-[1.75rem] font-gilmer">
-              Drive Systemic Change{" "}
-            </h6>
-            <p className="text-[1rem] font-[400] font-aeonik leading-[1.5rem] text-primary">
-              Through advocacy and education, we promote ESG adoption as a
-              non-negotiable for sustainable growth across industries.
-            </p>
-          </div>{" "}
-        </div>
+        </AnimatedElement>
       </div>
     </div>
   );

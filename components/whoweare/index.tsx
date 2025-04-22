@@ -2,6 +2,11 @@ import Link from "next/link";
 import { MdArrowOutward } from "react-icons/md";
 import CustomImage from "../customimage";
 import dynamic from "next/dynamic";
+import {
+  AnimatedElement,
+  AnimatedElementLeft,
+  AnimatedElementRight,
+} from "../animation/index.tsx";
 
 const Icon = dynamic(() => import("../icons/icons.tsx"), {
   ssr: false,
@@ -81,22 +86,28 @@ const WhoWeAre = () => {
       </section>
       <section className="flex flex-col gap-3 sm:flex-row justify-between items-start px-[8%] py-5 sm:py-15 mx-auto">
         <div className="w-full sm:w-5/12 h-full flex items-start font-gilmer font-[600] text-black">
-          <h2 className="text-[1.875rem] md:text-[1.8rem] font-gilmer font-[600] lg:text-[2.25rem]">
-            Who We Are
-          </h2>
+          <AnimatedElementLeft delay={0.2}>
+            <h2 className="text-[1.875rem] md:text-[1.8rem] font-gilmer font-[600] lg:text-[2.25rem]">
+              Who We Are
+            </h2>
+          </AnimatedElementLeft>
         </div>
         <div className="w-full sm:w-7/12 h-full flex flex-col items-start gap-6">
-          <p className="font-aeonikpro text-[1.125rem] md:text-[1.5rem] xl:text-[2rem] text-[#001928] leading-[28px] sm:leading-[2.5rem] font-[400] tracking-[-2%]">
-            Hiraeth Consultancy is a boutique ESG advisory firm dedicated to
-            bridging the gap between corporate responsibility and investor
-            expectations.
-          </p>
-          <p className="font-aeonikpro text-[1.125rem] md:text-[1.5rem] xl:text-[2rem] text-[#8A959C] leading-[28px] sm:leading-[2.5rem] font-[400] tracking-[-2%]">
-            Founded by a team of ex-investors, sustainability auditors, and
-            corporate strategists, we help businesses across industries build
-            ESG portfolios that attract funding, mitigate risks, and
-            future-proof growth.
-          </p>
+          <AnimatedElement delay={0.5}>
+            <p className="font-aeonikpro text-[1.125rem] md:text-[1.5rem] xl:text-[2rem] text-[#001928] leading-[28px] sm:leading-[2.5rem] font-[400] tracking-[-2%]">
+              Hiraeth Consultancy is a boutique ESG advisory firm dedicated to
+              bridging the gap between corporate responsibility and investor
+              expectations.
+            </p>
+          </AnimatedElement>
+          <AnimatedElement delay={0.8}>
+            <p className="font-aeonikpro text-[1.125rem] md:text-[1.5rem] xl:text-[2rem] text-[#8A959C] leading-[28px] sm:leading-[2.5rem] font-[400] tracking-[-2%]">
+              Founded by a team of ex-investors, sustainability auditors, and
+              corporate strategists, we help businesses across industries build
+              ESG portfolios that attract funding, mitigate risks, and
+              future-proof growth.
+            </p>
+          </AnimatedElement>
           <Link
             href="/about-us"
             className="flex text-[#00B012] items-center gap-2 font-aeonik text-[1.125rem] font-[400]"
@@ -109,33 +120,41 @@ const WhoWeAre = () => {
       <section className=" px-[8%] py-5 sm:py-15 mx-auto">
         <div className="flex lg:flex-row flex-col gap-8 w-full justify-baseline">
           <div className="w-full lg:w-[40%] h-full flex items-start font-gilmer font-[600] text-black">
-            <CustomImage src="/people.png" alt="" width={444} height={352} />
+            <AnimatedElementLeft delay={1.5}>
+              <CustomImage src="/people.png" alt="" width={444} height={352} />
+            </AnimatedElementLeft>
           </div>
           <div className="w-full lg:w-[60%] h-full flex sm:flex-row flex-col gap-8 sm:gap-6">
-            <div className="flex flex-col gap-3 pt-7 sm:pt-3">
-              <Icon name="target" />
-              <h6 className="text-[1.75rem] leading-[34px] font-aeonik font-[500] text-[#001928] tracking-[0%]">
-                Investor-Centric <br />
-                Expertise
-              </h6>
-              <p className="text-[1rem] font-aeonik font-[400] text-[#001928] tracking-[0%]">
-                Our team includes former fund managers and ESG analysts who know
-                firsthand what investors scrutinize—from carbon metrics to board
-                diversity ratios. We translate your sustainability efforts into
-                the language of ROI.
-              </p>
-            </div>
-            <div className="flex flex-col gap-3 sm:pt-3 pt-7">
-              <Icon name="settings" />
-              <h6 className="text-[1.75rem] font-aeonik font-[500] text-[#001928] tracking-[0%] leading-[34px]">
-                Tailored, Actionable Frameworks{" "}
-              </h6>
-              <p className="text-[1rem] font-aeonik font-[400] text-[#001928] tracking-[0%]">
-                Cookie-cutter ESG strategies fail. We design bespoke roadmaps
-                aligned with global standards (GRI, SASB, TCFD) while
-                prioritizing the metrics that matter most to your stakeholders.
-              </p>
-            </div>
+            <AnimatedElement delay={0.5}>
+              {" "}
+              <div className="flex flex-col gap-3 pt-7 sm:pt-3">
+                <Icon name="target" />
+                <h6 className="text-[1.75rem] leading-[34px] font-aeonik font-[500] text-[#001928] tracking-[0%]">
+                  Investor-Centric <br />
+                  Expertise
+                </h6>
+                <p className="text-[1rem] font-aeonik font-[400] text-[#001928] tracking-[0%]">
+                  Our team includes former fund managers and ESG analysts who
+                  know firsthand what investors scrutinize—from carbon metrics
+                  to board diversity ratios. We translate your sustainability
+                  efforts into the language of ROI.
+                </p>
+              </div>
+            </AnimatedElement>
+            <AnimatedElementRight delay={1}>
+              <div className="flex flex-col gap-3 sm:pt-3 pt-7">
+                <Icon name="settings" />
+                <h6 className="text-[1.75rem] font-aeonik font-[500] text-[#001928] tracking-[0%] leading-[34px]">
+                  Tailored, Actionable Frameworks{" "}
+                </h6>
+                <p className="text-[1rem] font-aeonik font-[400] text-[#001928] tracking-[0%]">
+                  Cookie-cutter ESG strategies fail. We design bespoke roadmaps
+                  aligned with global standards (GRI, SASB, TCFD) while
+                  prioritizing the metrics that matter most to your
+                  stakeholders.
+                </p>
+              </div>
+            </AnimatedElementRight>
           </div>
         </div>
       </section>

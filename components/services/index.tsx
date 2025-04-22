@@ -3,6 +3,7 @@ import MainLayout from "../mainlayout";
 import CustomImage from "../customimage";
 import dynamic from "next/dynamic";
 import { useModal } from "../modalcontext";
+import { AnimatedElement } from "../animation";
 
 const Icon = dynamic(() => import("../../components/icons/icons"), {
   ssr: false,
@@ -23,70 +24,77 @@ const ServicesComponent = () => {
     >
       <div className="flex flex-col gap-5 min-h-screen items-center justify-center w-full">
         <div className="px-8 sm:px-0 flex gap-5 items-center sm:justify-center w-full sm:max-w-[75%] mt-20 sm:mt-10">
-          <h1 className="font-clashlight font-[700] sm:text-[3rem] lg:text-[3.75rem] text-[2.25rem] text-primary leading-[2.75rem] sm:leading-[3.5rem] lg:leading-[4.5rem] tracking-[-2%] sm:text-center">
-            Pioneering ESG Excellence to Unlock Growth and Investor Confidence{" "}
-          </h1>
+          <AnimatedElement delay={0.5}>
+            <h1 className="font-clashlight font-[700] sm:text-[3rem] lg:text-[3.75rem] text-[2.25rem] text-primary leading-[2.75rem] sm:leading-[3.5rem] lg:leading-[4.5rem] tracking-[-2%] sm:text-center">
+              Pioneering ESG Excellence to Unlock Growth and Investor Confidence{" "}
+            </h1>
+          </AnimatedElement>
         </div>
-        <div className="flex sm:justify-center items-center px-8 sm:px-0">
-          <p className="text-primary font-gilmer font-[400] w-full text-[1.125rem] sm:text-[1.25rem] leading-[1.75rem] sm:leading-[2rem] tracking-[-0.02em] sm:text-center sm:max-w-[55%]">
-            At Hiraeth, our approach is designed to be thorough, collaborative,
-            and tailored to your unique business needs. We guide companies
-            through every step of the ESG integration process, ensuring you not
-            only meet investor expectations but also position yourself as a
-            leader in sustainability and responsible governance.
-          </p>
-        </div>
-        <div className="px-6">
-          <CustomImage
-            src="/services.png"
-            width={874}
-            height={487}
-            alt="about us hero image"
-          />
-        </div>
-
-        <div className="w-full h-full sm:py-16 py-5 px-[8%]">
-          <div className="flex justify-center items-center  py-6 ">
-            <h6 className="text-primary font-gilmer font-[600] text-[2.25rem] tracking-[-2%]">
-              How We Work
-            </h6>
+        <AnimatedElement delay={1}>
+          <div className="flex sm:justify-center items-center px-8 sm:px-0">
+            <p className="text-primary font-gilmer font-[400] w-full text-[1.125rem] sm:text-[1.25rem] leading-[1.75rem] sm:leading-[2rem] tracking-[-0.02em] sm:text-center sm:max-w-[55%]">
+              At Hiraeth, our approach is designed to be thorough,
+              collaborative, and tailored to your unique business needs. We
+              guide companies through every step of the ESG integration process,
+              ensuring you not only meet investor expectations but also position
+              yourself as a leader in sustainability and responsible governance.
+            </p>
           </div>
-          <div className="flex sm:flex-row flex-wrap lg:flex-nowrap flex-col gap-4 lg:gap-6 items-start w-full">
-            <div className="bg-[#C6DFFE] p-7 rounded-2xl flex flex-col gap-4 sm:w-[48%] lg:w-4/12 w-full h-[25rem]">
-              <div>
-                <Icon name="one" />
+        </AnimatedElement>
+        <AnimatedElement delay={1.5}>
+          <div className="px-6">
+            <CustomImage
+              src="/services.png"
+              width={874}
+              height={487}
+              alt="about us hero image"
+            />
+          </div>
+        </AnimatedElement>
+        <AnimatedElement>
+          <div className="w-full h-full sm:py-16 py-5 px-[8%]">
+            <div className="flex justify-center items-center  py-6 ">
+              <h6 className="text-primary font-gilmer font-[600] text-[2.25rem] tracking-[-2%]">
+                How We Work
+              </h6>
+            </div>
+            <div className="flex sm:flex-row flex-wrap lg:flex-nowrap flex-col gap-4 lg:gap-6 items-start w-full">
+              <div className="bg-[#C6DFFE] p-7 rounded-2xl flex flex-col gap-4 sm:w-[48%] lg:w-4/12 w-full h-[25rem]">
+                <div>
+                  <Icon name="one" />
+                </div>
+                <span className="text-black font-[600] font-gilmer text-[1.5rem] sm:text-[1.5rem] xl:text-[1.75rem]">
+                  Initial Consultation & Assessment{" "}
+                </span>
+                <p className="text-[#001928] font-[400] font-gilmer text-[1rem] xl:text-[1.25rem] leading-[2rem] tracking-[-0.02em]">
+                  Understand first, act second. We diagnose your ESG gaps and
+                  goals to build strategies rooted in reality.
+                </p>
               </div>
-              <span className="text-black font-[600] font-gilmer text-[1.5rem] sm:text-[1.5rem] xl:text-[1.75rem]">
-                Initial Consultation & Assessment{" "}
-              </span>
-              <p className="text-[#001928] font-[400] font-gilmer text-[1rem] xl:text-[1.25rem] leading-[2rem] tracking-[-0.02em]">
-                Understand first, act second. We diagnose your ESG gaps and
-                goals to build strategies rooted in reality.
-              </p>
-            </div>
-            <div className="bg-[#D5F6E5] p-7 rounded-2xl flex flex-col gap-4 w-full sm:w-[48%] lg:w-4/12 h-[25rem]">
-              <Icon name="two" />
-              <span className="text-black font-[600] font-gilmer text-[1.5rem] sm:text-[1.5rem] xl:text-[1.75rem]">
-                Customized ESG Strategy Development{" "}
-              </span>
-              <p className="text-[#001928] font-[400] font-gilmer text-[1rem] xl:text-[1.25rem] leading-[2rem] tracking-[-0.02em]">
-                Your business is unique—your ESG plan should be too. No
-                templates. Only investor-aligned blueprints for your industry
-                and growth stage.
-              </p>
-            </div>
-            <div className="bg-[#E2E5E8] p-7 rounded-2xl flex flex-col gap-4 w-full sm:w-[48%] lg:w-4/12 h-[25rem]">
-              <Icon name="three" />
-              <span className="text-black font-[600] font-gilmer text-[1.5rem] xl:text-[1.75rem]">
-                Implementation & Portfolio Creation{" "}
-              </span>
-              <p className="text-[#001928] font-[400] font-gilmer text-[1rem] xl:text-[1.25rem] leading-[2rem] tracking-[-0.02em]">
-                From plan to proof. We turn strategies into policies and
-                portfolios that investors trust.
-              </p>
+              <div className="bg-[#D5F6E5] p-7 rounded-2xl flex flex-col gap-4 w-full sm:w-[48%] lg:w-4/12 h-[25rem]">
+                <Icon name="two" />
+                <span className="text-black font-[600] font-gilmer text-[1.5rem] sm:text-[1.5rem] xl:text-[1.75rem]">
+                  Customized ESG Strategy Development{" "}
+                </span>
+                <p className="text-[#001928] font-[400] font-gilmer text-[1rem] xl:text-[1.25rem] leading-[2rem] tracking-[-0.02em]">
+                  Your business is unique—your ESG plan should be too. No
+                  templates. Only investor-aligned blueprints for your industry
+                  and growth stage.
+                </p>
+              </div>
+              <div className="bg-[#E2E5E8] p-7 rounded-2xl flex flex-col gap-4 w-full sm:w-[48%] lg:w-4/12 h-[25rem]">
+                <Icon name="three" />
+                <span className="text-black font-[600] font-gilmer text-[1.5rem] xl:text-[1.75rem]">
+                  Implementation & Portfolio Creation{" "}
+                </span>
+                <p className="text-[#001928] font-[400] font-gilmer text-[1rem] xl:text-[1.25rem] leading-[2rem] tracking-[-0.02em]">
+                  From plan to proof. We turn strategies into policies and
+                  portfolios that investors trust.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
+        </AnimatedElement>
         <div className=" h-full sm:py-16 py-5 bg-[#D1E3FF]" id="packages">
           <div className="max-w-[84%] mx-auto">
             <div className="flex justify-center items-center pt-6 pb-10 ">
@@ -334,7 +342,9 @@ const ServicesComponent = () => {
 
         <div className="grid sm:grid-cols-2 sm:gap-10 gap-6 max-w-[84%] mx-auto pt-10 pb-15">
           <div className="">
-            <CustomImage width={549} height={444} alt="" src="/staff.png" />
+            <AnimatedElement>
+              <CustomImage width={549} height={444} alt="" src="/staff.png" />
+            </AnimatedElement>
           </div>
           <div className="flex flex-col gap-6 sm:justify-center">
             <h4 className="font-[600] font-gilmer text-[1.875rem] sm:leading-[2.5rem] lg:leading-[2.75rem] lg:text-[2.25rem] text-shadow-primary w-11/12">
