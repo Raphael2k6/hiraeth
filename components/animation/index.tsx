@@ -1,5 +1,4 @@
 import { useEffect, useRef } from "react";
-import type { ReactNode } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
@@ -40,7 +39,7 @@ export const AnimatedElement = ({ children, delay }: AnimatedElementProps) => {
       animation.scrollTrigger?.kill();
       animation.kill();
     };
-  }, []);
+  }, [delay]);
 
   return <div ref={elementRef}>{children}</div>;
 };
@@ -77,7 +76,7 @@ export const AnimatedElementLeft = ({
       animation.scrollTrigger?.kill();
       animation.kill();
     };
-  }, []);
+  }, [delay]);
 
   return <div ref={elementRef}>{children}</div>;
 };
