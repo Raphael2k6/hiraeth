@@ -45,7 +45,7 @@ const NavBar: React.FC<NavBarProps> = ({
       <nav>
         <div
           className={`${
-            pathname === "/" && "bg-[#D5F6E5]"
+            pathname === "/" && "bg-[#D0F0C0]"
           } sm:flex hidden justify-between items-center  p-4 mx-auto ${
             isFixed
               ? "fixed top-0 left-0 px-[8%] z-50 transition duration-[300ms] py-4 bg-white w-full ease-in shadow-xl"

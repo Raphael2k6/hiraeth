@@ -5,7 +5,7 @@ import { AnimatedElement, AnimatedElementLeft } from "../animation";
 const HeroSection = () => {
   const { handleOpenScheduleModal } = useModal();
   return (
-    <section className="pt-4 h-full lg:h-[100%] 2xl:h-[80vh] bg-[#D5F6E5]">
+    <section className="pt-4 h-full lg:h-[100%] 2xl:h-[80vh] bg-[#D0F0C0]">
       <div className="max-w-[85%] mx-auto">
         <div className="flex flex-col sm:flex-row pt-[4rem] pb-[4rem] sm:pb-[8rem] h-full w-full sm:px-4 gap-10 items-center">
           <div className="flex flex-col gap-6 items-start w-full sm:w-6/12 h-full">

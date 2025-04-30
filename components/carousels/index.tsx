@@ -49,15 +49,6 @@ function AutoPlay() {
             width={320}
             height={356}
             className="object-cover w-[95%] xl:w-[320px]"
-            src={"/slide1.png"}
-            alt=""
-          />
-        </div>
-        <div className="mx-2">
-          <CustomImage
-            width={320}
-            height={356}
-            className="object-cover w-[95%] xl:w-[320px]"
             src={"/slide2.png"}
             alt=""
           />{" "}
@@ -75,7 +66,7 @@ function AutoPlay() {
           <CustomImage
             width={320}
             height={356}
-            className="object-cover w-[95%] xl:w-[320px]"
+            className="object-cover w-[95%] xl:w-[320px] rounded-e-3xl"
             src={"/slide4.png"}
             alt=""
           />{" "}
@@ -95,24 +86,6 @@ function AutoPlay() {
             height={356}
             className="object-cover w-[95%] xl:w-[320px]"
             src={"/slide6.png"}
-            alt=""
-          />{" "}
-        </div>
-        <div className="mx-2">
-          <CustomImage
-            width={320}
-            height={356}
-            className="object-cover w-[95%] xl:w-[320px]"
-            src={"/slide7.png"}
-            alt=""
-          />{" "}
-        </div>
-        <div className="mx-2">
-          <CustomImage
-            width={320}
-            height={356}
-            className="object-cover w-[95%] xl:w-[320px]"
-            src={"/slide8.png"}
             alt=""
           />{" "}
         </div>
