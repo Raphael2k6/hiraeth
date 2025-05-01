@@ -16,19 +16,19 @@ const WhoWeAre = () => {
   return (
     <>
       <section className="hidden sm:flex">
-        <div className="flex flex-wrap sm:flex-nowrap items-center justify-between text-center bg-[#F3F6F9] py-10 px-[6%] w-full">
-          <div>
+        <div className="flex flex-wrap sm:flex-nowrap items-center justify-around text-center bg-[#F3F6F9] py-10 px-[6%] w-full">
+          {/* <div>
             <span className="font-clash font-[800] sm:text-[2.25rem] text-black text-[2.5rem] tracking-[-2%]">
               50+
             </span>
             <p className="light-text font-aeonikpro">Companies & Partners</p>
-          </div>
-          <div>
+          </div> */}
+          {/* <div>
             <span className="font-clash font-[800] sm:text-[2.25rem] text-black text-[2.5rem] tracking-[-2%]">
                ₦25B+
             </span>
             <p className="light-text font-aeonikpro">Secured Funding</p>
-          </div>
+          </div> */}
           <div>
             <span className="font-clash font-[800] sm:text-[2.25rem] text-black text-[2.5rem] tracking-[-2%]">
               40%
@@ -51,18 +51,18 @@ const WhoWeAre = () => {
       </section>
       <section className="sm:hidden">
         <div className="flex flex-wrap sm:flex-nowrap items-center gap-10 justify-center text-center bg-[#F3F6F9] py-10 px-[6%] mx-auto">
-          <div>
+          {/* <div>
             <span className="font-clash font-[800] sm:text-[2.25rem] text-black text-[2.5rem] tracking-[-2%]">
               50+
             </span>
             <p className="light-text font-aeonikpro">Companies & Partners</p>
-          </div>
-          <div>
+          </div> */}
+          {/* <div>
             <span className="font-clash font-[800] sm:text-[2.25rem] text-black text-[2.5rem] tracking-[-2%]">
                ₦25B+
             </span>
             <p className="light-text font-aeonikpro">Secured Funding</p>
-          </div>
+          </div> */}
           <div>
             <span className="font-clash font-[800] sm:text-[2.25rem] text-black text-[2.5rem] tracking-[-2%]">
               40%
