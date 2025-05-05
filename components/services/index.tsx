@@ -66,28 +66,32 @@ const ServicesComponent = () => {
                 <span className="text-black font-[600] font-gilmer text-[1.5rem] sm:text-[1.5rem] xl:text-[1.75rem]">
                   Initial Consultation & Assessment{" "}
                 </span>
-                <p className="text-[#001928] font-[400] font-gilmer text-[1rem] xl:text-[1.25rem] leading-[2rem] tracking-[-0.02em]">
+                <p className="text-[#001928] font-[400] font-gilmer text-[1rem] xl:text-[1.25rem] leading-[2rem] max-xl:leading-[1.8rem] tracking-[-0.02em]">
                   Understand first, act second. We diagnose your ESG gaps and
                   goals to build strategies rooted in reality.
                 </p>
               </div>
               <div className="bg-[#D5F6E5] p-7 rounded-2xl flex flex-col gap-4 w-full sm:w-[48%] lg:w-4/12 h-[25rem]">
-                <Icon name="two" />
+                <div>
+                  <Icon name="two" />
+                </div>
                 <span className="text-black font-[600] font-gilmer text-[1.5rem] sm:text-[1.5rem] xl:text-[1.75rem]">
                   Customized ESG Strategy Development{" "}
                 </span>
-                <p className="text-[#001928] font-[400] font-gilmer text-[1rem] xl:text-[1.25rem] leading-[2rem] tracking-[-0.02em]">
+                <p className="text-[#001928] font-[400] font-gilmer text-[1rem] xl:text-[1.25rem] leading-[2rem] max-xl:leading-[1.8rem] tracking-[-0.02em]">
                   Your business is unique—your ESG plan should be too. No
                   templates. Only investor-aligned blueprints for your industry
                   and growth stage.
                 </p>
               </div>
               <div className="bg-[#E2E5E8] p-7 rounded-2xl flex flex-col gap-4 w-full sm:w-[48%] lg:w-4/12 h-[25rem]">
-                <Icon name="three" />
+                <div>
+                  <Icon name="three" />
+                </div>
                 <span className="text-black font-[600] font-gilmer text-[1.5rem] xl:text-[1.75rem]">
                   Implementation & Portfolio Creation{" "}
                 </span>
-                <p className="text-[#001928] font-[400] font-gilmer text-[1rem] xl:text-[1.25rem] leading-[2rem] tracking-[-0.02em]">
+                <p className="text-[#001928] font-[400] font-gilmer text-[1rem] xl:text-[1.25rem] leading-[2rem] max-xl:leading-[1.8rem] tracking-[-0.02em]">
                   From plan to proof. We turn strategies into policies and
                   portfolios that investors trust.
                 </p>
@@ -108,21 +112,21 @@ const ServicesComponent = () => {
                   Regular Packages
                 </h6>
                 <ol className="list-decimal list-outside">
-                  <li className="flex items-center gap-4 pb-4">
+                  <li className="flex gap-4 pb-4">
                     <span className="font-[600] text-[24px] font-gilmer">
                       1
                     </span>
-                    <span className="text-[1rem] font-gilmer font-[400] leading-[1.5rem]">
+                    <span className="text-[1rem] font-gilmer font-[400] leading-[1.5rem] pt-1">
                       An initial consultation and assessment to identify
                       material topics important to the business and evaluate its
                       current ESG standing.
                     </span>
                   </li>
-                  <li className="flex items-center gap-4 pb-4">
+                  <li className="flex gap-4 pb-4">
                     <span className="font-[600] text-[24px] font-gilmer">
                       2
                     </span>
-                    <span className="text-[1rem] font-gilmer font-[400] leading-[1.5rem]">
+                    <span className="text-[1rem] font-gilmer font-[400] leading-[1.5rem] pt-1">
                       We also perform a risk analysis, identifying potential
                       challenges and opportunities related to environmental,
                       social, and governance factors. This ensures that your ESG
@@ -131,66 +135,66 @@ const ServicesComponent = () => {
                       strategies.
                     </span>
                   </li>
-                  <li className="flex items-center gap-4 pb-4">
+                  <li className="flex gap-4 pb-4">
                     <span className="font-[600] text-[24px] font-gilmer">
                       3
                     </span>
-                    <span className="text-[1rem] font-gilmer font-[400] leading-[1.5rem]">
+                    <span className="text-[1rem] font-gilmer font-[400] leading-[1.5rem] pt-1">
                       Creation of companywide policies to be adopted by all
                       stakeholders
                     </span>
                   </li>
-                  <li className="flex items-center gap-4 pb-4">
+                  <li className="flex gap-4 pb-4">
                     <span className="font-[600] text-[24px] font-gilmer">
                       4
                     </span>
-                    <span className="text-[1rem] font-gilmer font-[400] leading-[1.5rem]">
+                    <span className="text-[1rem] font-gilmer font-[400] leading-[1.5rem] pt-1">
                       Creation of supplier code of conduct and supplier scoring
                       criteria if applicable.
                     </span>
                   </li>
-                  <li className="flex items-center gap-4 pb-4">
+                  <li className="flex gap-4 pb-4">
                     <span className="font-[600] text-[24px] font-gilmer">
                       5
                     </span>
-                    <span className="text-[1rem] font-gilmer font-[400] leading-[1.5rem]">
+                    <span className="text-[1rem] font-gilmer font-[400] leading-[1.5rem] pt-1">
                       Creation of checklists aligned with international
                       standards if applicable (minerals, commodity trading,
                       warehouse).
                     </span>
                   </li>
-                  <li className="flex items-center gap-4 pb-4">
+                  <li className="flex gap-4 pb-4">
                     <span className="font-[600] text-[24px] font-gilmer">
                       6
                     </span>
-                    <span className="text-[1rem] font-gilmer font-[400] leading-[1.5rem]">
+                    <span className="text-[1rem] font-gilmer font-[400] leading-[1.5rem] pt-1">
                       Data gathering and KPIs related to ESG, which will be
                       requested by investors.
                     </span>
                   </li>
-                  <li className="flex items-center gap-4 pb-4">
+                  <li className="flex gap-4 pb-4">
                     <span className="font-[600] text-[24px] font-gilmer">
                       7
                     </span>
-                    <span className="text-[1rem] font-gilmer font-[400] leading-[1.5rem]">
+                    <span className="text-[1rem] font-gilmer font-[400] leading-[1.5rem] pt-1">
                       Creation of a short to medium term ESG strategy and road
                       map.
                     </span>
                   </li>
-                  <li className="flex items-center gap-4 pb-4">
+                  <li className="flex gap-4 pb-4">
                     <span className="font-[600] text-[24px] font-gilmer">
                       8
                     </span>
-                    <span className="text-[1rem] font-gilmer font-[400] leading-[1.5rem]">
+                    <span className="text-[1rem] font-gilmer font-[400] leading-[1.5rem] pt-1">
                       Training and Capacity building particularly for the
                       investor relations and human resources teams.
                     </span>
                   </li>
-                  <li className="flex items-center gap-4 pb-4">
+                  <li className="flex gap-4 pb-4">
                     <span className="font-[600] text-[24px] font-gilmer">
                       9
                     </span>
-                    <span className="text-[1rem] font-gilmer font-[400] leading-[1.5rem]">
+                    <span className="text-[1rem] font-gilmer font-[400] leading-[1.5rem] pt-1">
                       Engaging with investors, shareholders and other
                       stakeholders on behalf of client organisations to
                       understand their responsible investment priorities and
@@ -206,21 +210,21 @@ const ServicesComponent = () => {
                     Extensive Packages
                   </h6>
                   <ol className="list-decimal list-outside">
-                    <li className="flex items-center gap-4 pb-4">
+                    <li className="flex gap-4 items-start  pb-4">
                       <span className="font-[600] text-[24px] font-gilmer">
                         1
                       </span>
-                      <span className="text-[1rem] font-gilmer font-[400] leading-[1.5rem]">
+                      <span className="text-[1rem] font-gilmer font-[400] leading-[1.5rem] pt-1">
                          An initial consultation and assessment to identify
                         material topics important to the business and evaluate
                         its current ESG standing.
                       </span>
                     </li>
-                    <li className="flex items-center gap-4 pb-4">
+                    <li className="flex gap-4 pb-4">
                       <span className="font-[600] text-[24px] font-gilmer">
                         2
                       </span>
-                      <span className="text-[1rem] font-gilmer font-[400] leading-[1.5rem]">
+                      <span className="text-[1rem] font-gilmer font-[400] leading-[1.5rem] pt-1">
                         We also perform a risk analysis, identifying potential
                         challenges and opportunities related to environmental,
                         social, and governance factors. This ensures that your
@@ -229,93 +233,93 @@ const ServicesComponent = () => {
                         strategies.
                       </span>
                     </li>
-                    <li className="flex items-center gap-4 pb-4">
+                    <li className="flex gap-4 pb-4">
                       <span className="font-[600] text-[24px] font-gilmer">
                         3
                       </span>
-                      <span className="text-[1rem] font-gilmer font-[400] leading-[1.5rem]">
+                      <span className="text-[1rem] font-gilmer font-[400] leading-[1.5rem] pt-1">
                         Creation of companywide policies to be adopted by all
                         stakeholders
                       </span>
                     </li>
-                    <li className="flex items-center gap-4 pb-4">
+                    <li className="flex gap-4 pb-4">
                       <span className="font-[600] text-[24px] font-gilmer">
                         4
                       </span>
-                      <span className="text-[1rem] font-gilmer font-[400] leading-[1.5rem]">
+                      <span className="text-[1rem] font-gilmer font-[400] leading-[1.5rem] pt-1">
                         Benchmarking with competitors and against industry
                         standards.
                       </span>
                     </li>
-                    <li className="flex items-center gap-4 pb-4">
+                    <li className="flex gap-4 pb-4">
                       <span className="font-[600] text-[24px] font-gilmer">
                         5
                       </span>
-                      <span className="text-[1rem] font-gilmer font-[400] leading-[1.5rem]">
+                      <span className="text-[1rem] font-gilmer font-[400] leading-[1.5rem] pt-1">
                         Creation of checklists aligned with international
                         standards if applicable (minerals, commodity trading,
                         warehouse).
                       </span>
                     </li>
-                    <li className="flex items-center gap-4 pb-4">
+                    <li className="flex gap-4 pb-4">
                       <span className="font-[600] text-[24px] font-gilmer">
                         6
                       </span>
-                      <span className="text-[1rem] font-gilmer font-[400] leading-[1.5rem]">
+                      <span className="text-[1rem] font-gilmer font-[400] leading-[1.5rem] pt-1">
                         Benchmarking with competitors and against industry
                         standards.
                       </span>
                     </li>
-                    <li className="flex items-center gap-4 pb-4">
+                    <li className="flex gap-4 pb-4">
                       <span className="font-[600] text-[24px] font-gilmer">
                         7
                       </span>
-                      <span className="text-[1rem] font-gilmer font-[400] leading-[1.5rem]">
+                      <span className="text-[1rem] font-gilmer font-[400] leading-[1.5rem] pt-1">
                         Re-vamping/creation of a sustainability section on the
                         company’s website.
                       </span>
                     </li>
-                    <li className="flex items-center gap-4 pb-4">
+                    <li className="flex gap-4 pb-4">
                       <span className="font-[600] text-[24px] font-gilmer">
                         8
                       </span>
-                      <span className="text-[1rem] font-gilmer font-[400] leading-[1.5rem]">
+                      <span className="text-[1rem] font-gilmer font-[400] leading-[1.5rem] pt-1">
                         Data gathering and KPIs related to ESG, which will be
                         requested by investors.
                       </span>
                     </li>
-                    <li className="flex items-center gap-4 pb-4">
+                    <li className="flex gap-4 pb-4">
                       <span className="font-[600] text-[24px] font-gilmer">
                         9
                       </span>
-                      <span className="text-[1rem] font-gilmer font-[400] leading-[1.5rem]">
+                      <span className="text-[1rem] font-gilmer font-[400] leading-[1.5rem] pt-1">
                         Creation of a short to medium term ESG strategy and road
                         map.
                       </span>
                     </li>
-                    <li className="flex items-center gap-4 pb-4">
+                    <li className="flex gap-4 pb-4">
                       <span className="font-[600] text-[24px] font-gilmer">
                         10
                       </span>
-                      <span className="text-[1rem] font-gilmer font-[400] leading-[1.5rem]">
+                      <span className="text-[1rem] font-gilmer font-[400] leading-[1.5rem] pt-1">
                         Training and Capacity building particularly for the
                         investor relations and human resources teams.
                       </span>
                     </li>
-                    <li className="flex items-center gap-4 pb-4">
+                    <li className="flex gap-4 pb-4">
                       <span className="font-[600] text-[24px] font-gilmer">
                         11
                       </span>
-                      <span className="text-[1rem] font-gilmer font-[400] leading-[1.5rem]">
+                      <span className="text-[1rem] font-gilmer font-[400] leading-[1.5rem] pt-1">
                         Creation of an ESG highlights report/ sustainability
                         report outline.
                       </span>
                     </li>
-                    <li className="flex items-center gap-4 pb-4">
+                    <li className="flex gap-4 pb-4">
                       <span className="font-[600] text-[24px] font-gilmer">
                         12
                       </span>
-                      <span className="text-[1rem] font-gilmer font-[400] leading-[1.5rem]">
+                      <span className="text-[1rem] font-gilmer font-[400] leading-[1.5rem] pt-1">
                         Engaging with investors, shareholders and other
                         stakeholders on behalf of client organisations to
                         understand their responsible investment priorities and
@@ -323,11 +327,11 @@ const ServicesComponent = () => {
                         engagement.
                       </span>
                     </li>
-                    <li className="flex items-center gap-4 pb-4">
+                    <li className="flex gap-4 pb-4">
                       <span className="font-[600] text-[24px] font-gilmer">
                         13
                       </span>
-                      <span className="text-[1rem] font-gilmer font-[400] leading-[1.5rem]">
+                      <span className="text-[1rem] font-gilmer font-[400] leading-[1.5rem] pt-1">
                         Development of a Corporate Social Responsibility plan in
                         collaboration with relevant NGOs and partners aligned
                         with the business.

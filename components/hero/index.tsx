@@ -11,13 +11,14 @@ const HeroSection = () => {
           <div className="flex flex-col gap-6 items-start w-full sm:w-6/12 h-full">
             <AnimatedElementLeft delay={0.5}>
               {" "}
-              <h1 className="text-[2.25rem] md:text-[2rem] xl:text-[3.75rem] text-primary font-[600] font-clashlight leading-[2.5rem] lg:leading-[2.75rem] xl:leading-[4rem] tracking-[-2%]">
-                Embedding ESG Excellence into <br className="hidden sm:flex" />
+              <h1 className="text-[2.25rem] md:text-[2rem] xl:text-[3.75rem] 2xl:text-[5.5rem] text-primary font-[600] font-clashlight leading-[2.5rem] lg:leading-[2.75rem] xl:leading-[4rem] 2xl:leading-[7rem] tracking-[-2%] w-full">
+                Embedding ESG Excellence into{" "}
+                <br className="hidden sm:flex 2xl:hidden" />
                 Your Strategy.
               </h1>
             </AnimatedElementLeft>
             <AnimatedElementLeft delay={1}>
-              <p className="text-[1.125rem] lg:text-[1.25rem] text-primary font-gilmer font-[500] leading-[1.75rem] md:leading-[1.7rem] tracking-[-0.02em]">
+              <p className="text-[1.125rem] lg:text-[1.25rem] 2xl:text-[2.5rem] text-primary font-gilmer font-[500] leading-[1.75rem] md:leading-[1.7rem] 2xl:leading-[3.2rem] tracking-[-0.02em] w-full 2xl:w-[90%]">
                 We craft portfolios that align ENVIRONMENTAL impact, SOCIAL
                 equity, and GOVERNANCE precision to secure funding from
                 ESG-Driven Investors.

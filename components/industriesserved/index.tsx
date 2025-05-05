@@ -10,7 +10,7 @@ const IndustriesServed = () => {
           Industries We Serve
         </h6>
       </div>
-      <AutoPlay />{" "}
+      <AutoPlay />
     </div>
   );
 };

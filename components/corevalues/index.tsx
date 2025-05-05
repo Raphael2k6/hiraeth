@@ -15,7 +15,7 @@ const CoreValues = () => {
         </h6>
       </div>
       <div className="flex sm:flex-row flex-wrap lg:flex-nowrap flex-col gap-4 lg:gap-6 items-start w-full">
-        <div className="bg-[#C6DFFE] p-6 sm:p-5 lg:p-7 rounded-2xl flex flex-col gap-6 sm:w-[48%] lg:w-4/12 w-full h-[25rem]">
+        <div className="bg-[#C6DFFE] p-6 sm:p-5 lg:p-7 max-lg:gap-4 gap-6 rounded-2xl flex flex-col sm:w-[48%] lg:w-4/12 w-full h-[25rem]">
           <div>
             <Icon name="transparency" />
           </div>
@@ -36,8 +36,10 @@ const CoreValues = () => {
             <IoMdArrowRoundForward className="text-[text-[1.5rem]]" />
           </Link>
         </div>
-        <div className="bg-[#D5F6E5] p-6 sm:p-5 lg:p-7 rounded-2xl flex flex-col gap-6 w-full sm:w-[48%] lg:w-4/12 h-[25rem]">
-          <Icon name="collaboration" />
+        <div className="bg-[#D5F6E5] p-6 sm:p-5 lg:p-7 rounded-2xl flex flex-col max-lg:gap-4 gap-6 w-full sm:w-[48%] lg:w-4/12 h-[25rem]">
+          <div>
+            <Icon name="collaboration" />
+          </div>
           <span className="text-black font-[600] font-gilmer text-[1.5rem] sm:text-[1.75rem]">
             Collaboration
           </span>
@@ -55,8 +57,10 @@ const CoreValues = () => {
             <IoMdArrowRoundForward className="text-[text-[1.5rem]]" />
           </Link>
         </div>
-        <div className="bg-[#E2E5E8] p-6 sm:p-5 lg:p-7 rounded-2xl flex flex-col gap-6 w-full sm:w-[48%] lg:w-4/12 h-[25rem]">
-          <Icon name="impact" />
+        <div className="bg-[#E2E5E8] p-6 sm:p-5 lg:p-7 rounded-2xl flex flex-col max-lg:gap-4 gap-6  w-full sm:w-[48%] lg:w-4/12 h-[25rem]">
+          <div>
+            <Icon name="impact" />
+          </div>
           <span className="text-black font-[600] font-gilmer text-[1.5rem] sm:text-[1.75rem]">
             Impact
           </span>
