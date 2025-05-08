@@ -12,9 +12,9 @@ interface NavBarProps {
 }
 
 const routesData = [
-  { name: "About Us", path: "/about-us" },
-  { name: "Services", path: "/services" },
-  { name: "Contact Us", path: "/contact-us" },
+  { name: "About Us", path: "/about-us/" },
+  { name: "Services", path: "/services/" },
+  { name: "Contact Us", path: "/contact-us/" },
 ];
 
 const NavBar: React.FC<NavBarProps> = ({

@@ -40,7 +40,7 @@ const Values = () => {
       <div className="grid sm:grid-cols-2 lg:gap-10 gap-6 mt-16 sm:mt-26">
         <AnimatedElement>
           <div className="hidden sm:flex">
-            <CustomImage width={549} height={444} alt="" src="/vision.png" />
+            <CustomImage width={549} height={444} alt="" src="/visionimg.png" />
           </div>
         </AnimatedElement>
         <div className="flex flex-col gap-6 justify-center">
@@ -62,7 +62,7 @@ const Values = () => {
           </button>
         </div>
         <div className="sm:hidden">
-          <CustomImage width={549} height={444} alt="" src="/vision.png" />
+          <CustomImage width={549} height={444} alt="" src="/visionimg.png" />
         </div>
       </div>
       <div className="mt-20">
@@ -95,7 +95,8 @@ const Values = () => {
             <div className="flex flex-col gap-6">
               <Icon name="circle" />
               <h6 className="text-[1.5rem] leading=[150%] text-primary font-[600] sm:text-[1.75rem] font-gilmer">
-                Drive Systemic Change{" "}
+                Drive Systemic <br className="hidden xl:flex" />
+                Change{" "}
               </h6>
               <p className="text-[1rem] font-[400] font-aeonik leading-[1.5rem] text-primary">
                 Through advocacy and education, we promote ESG adoption as a

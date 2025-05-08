@@ -37,7 +37,7 @@ const HeroSection = () => {
           <div className="w-full sm:w-6/12 h-full flex items-center justify-center">
             <AnimatedElement delay={2}>
               <CustomImage
-                src="/hero.png"
+                src="/heroimg.png"
                 width={549}
                 height={536}
                 alt="Hero Image"

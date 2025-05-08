@@ -67,7 +67,7 @@ const Hero = () => {
             Attract forward-thinking investors.
           </p>
         </div>
-        <div className="bg-[#00CC66] md:px-6 py-10 px-10 sm:px-8 rounded-xl w-full lg:w-4/12 sm:h-[176px]">
+        <div className="bg-[#93A187] md:px-6 py-10 px-10 sm:px-8 rounded-xl w-full lg:w-4/12 sm:h-[176px]">
           <p className="font-gilmer text-[1.125rem]  md:text-[1rem] xl:text-[1.5rem] text-white leading-[28px] md:leading-[24px] xl:leading-[2rem] font-[700] tracking-[-2%]">
             Mitigate risks in an evolving regulatory landscape.
           </p>

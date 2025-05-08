@@ -29,7 +29,7 @@ const Testimonial = () => {
                 alt=""
               />{" "}
             </div>
-            <div className="w-full sm:w-6/12 xl:w-5/12 flex justify-baseline items-baseline-last">
+            <div className="w-full sm:w-6/12 xl:w-5/12 flex justify-baseline items-baseline-last bg-[#F8FCFF] p-4 rounded-2xl">
               <div className=" flex flex-col justify-baseline gap-4">
                 <div>
                   <Icon name="quote" />
@@ -43,6 +43,7 @@ const Testimonial = () => {
                   diversity metrics and carbon-neutral cloud infrastructure.
                   Result? We closed a $5M round led by a top impact fund.
                 </p>
+                <hr className="border-t-1 border-[#E6E8EA]" />
                 <div className="flex gap-2 items-center">
                   <span className="font-[600]">Anita Odunsi</span>
                   <p>CEO, NexGen AI Solutions</p>
